@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changing Mode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Add to cart</title>
+
 </head>
-<body>
-    
+
+<body id="darkMode">
+
+    <button class="btn-sun" onclick="darkMode()" >☀️</button>
+
+    <button class="btn-moon" onclick="lightMode()">🌙</button>
+
+
+
+    <div class="cart-container">
+        <img src="suit.png" class="img">
+
+        <div class="name">
+            <div class="nayo">Nayo</div>
+            Floral Print Kurta, Palazzo & Dupatta Set
+        </div>
+
+        <div class="button1-container">
+            <button class="btn1" id="btninc" onclick="inc()">+</button>
+
+            <button class="btn1" id="numchange">1</button>
+
+            <button class="btn1" id="btndec" onclick="dec()">-</button>
+
+        </div>
+        <div class="button2-container">
+            <button class="button2">Add to Cart</button>
+
+            <button class="button2"> Buy Now</button>
+        </div>
+    </div>
+    <script>
+        function inc()
+        {
+            const a = document.getElementById("numchange")
+            const qnt = parseInt(a.innerHTML)
+            if   (qnt==10) {
+                alert("Maximum Quantity of product is 10")
+          } 
+          else{
+            a.innerHTML = qnt + 1;
+          }
+            
+        }
+        
+        function dec()
+        {
+            const a = document.getElementById("numchange")
+            const qnt = parseInt(a.innerHTML)
+          if   (qnt==1) {
+                alert("Minimum Quantity of product is 1")
+          } 
+          else{
+            a.innerHTML = qnt - 1;
+          }
+            
+        }
+
+        
+    </script>
+   
 </body>
+
 </html>

@@ -1,0 +1,124 @@
+body{
+    background-color: #dfdfdf;
+}
+
+
+.color-light{
+    background-color: #dfdfdf;
+}
+
+.color-dark{
+    background-color: #1b0101;
+}
+.cart-container {
+
+    height: 680px;
+    width: 481px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    position: relative;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 3px rgba(226, 218, 218, 0.767);
+    font-size: 15px;
+
+}
+
+.cart-container:hover {
+    border-radius: 30px;
+    transition: 0.1s;
+    box-shadow: 1px 1px 5px 4px #aa838b;
+}
+
+.img {
+    position: absolute;
+    height: 480px;
+    width: 385px;
+    margin-left: 49px;
+    margin-top: 20px;
+}
+
+.name {
+    position: absolute;
+    top: 500px;
+    margin-left: 49px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.nayo {
+    color: gray;
+}
+
+
+
+.button1-container {
+
+    position: absolute;
+    top: 570px;
+    margin-left: 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+
+}
+
+.button2-container {
+    position: absolute;
+    top: 632px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.button2 {
+    padding: 6px;
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    margin-right: 54px;
+    width: 159px;
+    background-color: #aab9c1;
+    border-radius: 6px;
+    border: none;
+}
+.button2:hover{
+    border-radius: 30px;
+    transition: 0.1s;
+    box-shadow: 1px 1px 2px 2px #272f4e;
+    
+}
+
+.btn1 {
+    padding: 6px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    margin-right: 74px;
+    width: 40px;
+    background-color: #aa838b;
+    border-radius: 55px;
+    border: none;
+}
+
+.btn1:hover{
+    background-color:#62353e;
+    color: whitesmoke;
+}
+.btn-sun{
+     border: 2px solid red;
+     font-size:30px ;
+     margin-left: 1380px;
+     cursor: pointer;
+}
+
+
+.btn-moon{
+    border: 2px solid red;
+    font-size:30px ;
+    cursor: pointer;
+}
